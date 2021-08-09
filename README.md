@@ -9,6 +9,8 @@
 git clone git@github.com:patoui/test-php-8-pdo-transaction
 ```
 
+After cloning, change to the directory `cd test-php-8-pdo-transaction`
+
 #### 2. Start docker
 
 ```
