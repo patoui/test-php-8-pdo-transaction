@@ -27,7 +27,7 @@ docker-compose up
 Will work without error (container running php 7.4.11)
 
 ```
-docker exec -it tppt_php74 /bin/bash -c "php index.php 74"
+docker exec -it tppt_php74 php index.php 74
 ```
 
 #### 4. Run script against PHP 8.0 container
@@ -35,7 +35,7 @@ docker exec -it tppt_php74 /bin/bash -c "php index.php 74"
 Will trigger fatal error (container running php 8.0.9)
 
 ```
-docker exec -it tppt_php8 /bin/bash -c "php index.php 8"
+docker exec -it tppt_php8 php index.php 8
 ```
 
 Error should look similar to
