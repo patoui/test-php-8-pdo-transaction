@@ -1,5 +1,10 @@
 ## PHP 8 transaction issue
 
+Transaction fatal error
+
+```
+Fatal error: Uncaught PDOException: There is no active transaction
+```
 
 ### Steps to reproduce
 
