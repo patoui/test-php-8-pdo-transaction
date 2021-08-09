@@ -6,6 +6,12 @@ Transaction fatal error
 Fatal error: Uncaught PDOException: There is no active transaction
 ```
 
+This is caused by a backwards compatibility change in PHP 8.0 for PDO MySQL, here is the excerpt from the documentation:
+
+"PDO::inTransaction() now reports the actual transaction state of the connection, rather than an approximation maintained by PDO. If a query that is subject to "implicit commit" is executed, PDO::inTransaction() will subsequently return false, as a transaction is no longer active."
+
+Link for the above [migration to 8.0](https://www.php.net/manual/en/migration80.incompatible.php)
+
 ### Steps to reproduce
 
 #### 1. Clone this repository
